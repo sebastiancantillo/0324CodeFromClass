@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/cmagnus/Dropbox/Documents/Teaching/_uAlbanyTeachingMaterials/INF308programmingForInformatics/2019SpringINF308/demo/0324CodeFromClass/env"
+setenv VIRTUAL_ENV "/Users/cmagnus/Dropbox/Documents/Teaching/_uAlbanyTeachingMaterials/INF308programmingForInformatics/2019SpringINF308/scratch/pygameSandbox/testEnvironment"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
@@ -17,8 +17,8 @@ setenv PATH "$VIRTUAL_ENV/bin:$PATH"
 set _OLD_VIRTUAL_PROMPT="$prompt"
 
 if (! "$?VIRTUAL_ENV_DISABLE_PROMPT") then
-    if ("env" != "") then
-        set env_name = "env"
+    if ("testEnvironment" != "") then
+        set env_name = "testEnvironment"
     else
         if (`basename "VIRTUAL_ENV"` == "__") then
             # special case for Aspen magic directories
