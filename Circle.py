@@ -18,6 +18,8 @@ class Circle:
 
     if (self.position[0] < 0):
       print("left")
+      if (self.boundaries["left"] == "sticky"):
+        self.position[0] = self.position[0]-self.speed[0]
     if (self.position[0] > self.windowSize[0]):
       print("right")
     if (self.position[1] < 0):
