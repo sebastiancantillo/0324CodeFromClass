@@ -1,4 +1,5 @@
 import sys, pygame
+from Circle import *
 pygame.init()
 
 size = width, height = 320, 240
@@ -18,13 +19,17 @@ pygame.display.set_caption("Test")
 ballPosition = (0,0)
 ballRadius = 50
 
+myCircle = Circle(screen, red, ballPosition, ballRadius, speed)
+
 while 1:
     for event in pygame.event.get():
         if event.type == pygame.QUIT: sys.exit()
 
     screen.fill(backgroundColor)
-    ballPosition = (ballPosition[0]+speed[0], ballPosition[1]+speed[1])
+    #ballPosition = (ballPosition[0]+speed[0], ballPosition[1]+speed[1])
 
-    pygame.draw.circle(screen, red, ballPosition, ballRadius)
+    #pygame.draw.circle(screen, red, ballPosition, ballRadius)
+
+    myCircle.draw()
     
     pygame.display.flip()
