@@ -11,4 +11,7 @@ class Circle:
 
   def draw(self):
     pygame.draw.circle(self.window, self.color, self.position, self.radius)
+
+  def move(self):
+    self.position = (self.position[0]+self.speed[0], self.position[1]+self.speed[1])
     
