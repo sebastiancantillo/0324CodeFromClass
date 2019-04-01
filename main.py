@@ -14,10 +14,12 @@ backgroundColor = (255, 255, 255)
 red = (255, 0, 0)
 
 screen = pygame.display.set_mode(size)
+pygame.display.set_caption("Test")
 
 ballRadius = 50
 ball = pygame.draw.circle(screen, red, (0, 0), ballRadius)
 ballSurface = pygame.Surface((ballRadius*2, ballRadius*2))
+ballSurface.set_alpha(0)
 
 while 1:
     for event in pygame.event.get():
